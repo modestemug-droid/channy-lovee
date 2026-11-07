@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Channy Love Website ❤️</title>
+
+<style>
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: Arial;
+    padding-top: 30px;
+}
+
+h1 {
+    color: pink;
+    font-size: 32px;
+}
+
+.photo {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid pink;
+    margin: 20px;
+    box-shadow: 0 0 25px pink;
+}
+
+button {
+    background-color: white;
+    color: green;
+    padding: 18px 30px;
+    border-radius: 30px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#message {
+    color: pink;
+    font-size: 25px;
+}
+
+.heart {
+    position: fixed;
+    bottom: 0;
+    font-size: 30px;
+    animation: fly 4s linear forwards;
+    pointer-events: none;
+}
+
+@keyframes fly {
+    to {
+        transform: translateY(-100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<h1>Hello My Beautiful Channy 💞❤️</h1>
+
+<h2>Welcome to my Website</h2>
+
+<img src="img/Channy.JPG"
+     class="photo"
+     alt="Channy">
+
+<p>
+Ngufitiye aka message gato nshaka kukubwira.
+Niba ubishaka kanda kuri button iri hasi.
+</p>
+
+<button onclick="showMessage()">
+Miss Channy💕
+</button>
+
+<p id="message"></p>
+
+<script>
+function showMessage() {
+
+    document.getElementById("message").innerHTML =
+    "I MISS YOU CHANNY ❤️ I LOVE YOU! 💞";
+
+    for (let i = 0; i < 20; i++) {
+        let heart = document.createElement("div");
+
+        heart.className = "heart";
+        heart.innerHTML = "❤️";
+
+        heart.style.left = Math.random() * 100 + "vw";
+
+        heart.style.animationDuration =
+        (2 + Math.random() * 3) + "s";
+
+        document.body.appendChild(heart);
+
+        setTimeout(function() {
+            heart.remove();
+        }, 5000);
+    }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For My Channy ❤️</title>
+
+<style>
+body {
+    background: black;
+    color: white;
+    text-align: center;
+    font-family: Arial;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+h1 {
+    color: pink;
+}
+
+.message {
+    background: #1a0010;
+    border: 5px solid pink;
+    border-radius: 30px;
+    padding: 50px;
+    margin-top: 50px;
+    box-shadow: 0 0 25px pink;
+    position: relative;
+    z-index: 8;
+}
+
+.photo {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid pink;
+    box-shadow: 0 0 35px hotpink;
+}
+
+.heart {
+    position: fixed;
+    bottom: -40px;
+    animation: fly 5s linear forwards;
+    pointer-events: none;
+    z-index: 1;
+}
+
+@keyframes fly {
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<h1>❤️ Welcome My Queen ❤️</h1>
+
+<div class="message">
+
+<h2 style="color:pink;">
+To my Queen ❤️
+</h2>
+
+<p style="font-size:20px; line-height:1.8;">
+
+Hello mai Beautiful channy Wange ubaye unkunda ndakeka waba unzi 
+first of all nashakaga kumenya uko umeze uko waramutse, uko wiriwe, uko waraye....
+Sinzi niba nabona amagambo yasobanura uburyo Ngukunda,sinzi niba nabikubwira ukabyumva ,sinzi niba nabigosobanurira ukabimenya.. ariko icyambere cyanyacyo nuko ngukunda cyane, 💕 
+ndagukunda Kandi ndagusezeranya kuzakomeza nkagukunda mpaka mpaka igihe nange ntazi, byarenze kuba uri mai love uri Mai Wife ndagukunda kuburyo nbyangora kubona izina nakwita 
+Ndabizi ntabwo worohewe muburyo bumwe cg ubundi ariko nange ndagusezeranya kutazicuza na 1 sec bitewe nange😥
+Wabwiwe amagambo mabi kubera nge, witwa uko utari kubera nge, wihindura uko utari kubera nge, ariko nukuri nyemera mfate akanya nkubwire ngo Am sorry nange ntabwo aringe nange nisanze ngukunda kandi byararenze umupaka😥
+iyo nza kumenya ko haruzakubwira nabi kubera 
+ngewe haruzagutuka kubera nge wenda nari kumenya uko nitwara mbere hose😥
+sinicuza kd zinzigera nicuza kuba naragukunze ahubwo nicuza kuba ngushyira mubibazo utakajyiyemo😔
+u are mai HeartBeat nanubu sindakurira ngo nibaze ese ubuzima Ira atarimo bwaba bumeze gute iyo ngerageje mbona umwijima gusa, Baby nukuri kubaho utari sinzi niba nabibasha
+Ushobora kumva aya magambo ari yamitoma mbega yamagambo adafite aho ashingiye ariko byumve ko mbikuye k''umutima
+Baby ndagukunda kd nzanezezwa nuko uzavamo umuntu ukomeye abandi bafatiraho urugero, Dore iyi si ntabwo ari fear Iyi si ntacyo guhomba ifite ahubwo hahomba abayirimo bamwe irabonsa abandi ikabajugunya, ariko ndagira ngo ngusabe ikintu kimwe,
+Baho nkawe ubwawe dore ingendo yundi iravuna cyane Kuba Md abayeho kuriya siko nawe ugomba kubaho ikindi kuba Md yakubwiye nabi ntabwo ari ryo herezo ryawe ahubwo kora were kubyina insinzi mbere yo gutsinda,
+iteka insinzi iraryoha iyo ibyinwe nyuma, 
+Baby ndakwinginze Tegereza Success ubone kwishima niwishima mbere bizapfa byose nyuma abantu baguseke kd sibyiza
+fatirana amahirwe ufite uyumunsi uyakoreshe ibizagutunga mugihe cyumubabaro namakuba,
+Sinzi niba uzi impamvu Yesu yitwa Umwana wa Dawidi ntibamwite umwana wa Yozefu?!?
+Igisubizo nuko Dawidi yar''umwami yozefu akaba umubaji 
+sinzi niba uri kumva icyo kintu🧏
+Baby ibintu byiza bizahoraho ibirori bizahoraho ariko amahirwe dufite ubu ntabwo azahoraho iga gukoresha Time imana igutije Focus your Future pana gusubira kubyahise imbere hawe hagenge uhareme pana kuvugango runaka azamfasha nooooo, ba wowe ubwawe
+Ndashaka wiremo amakimbirane hagati yawe numutima yuko ntacyo urageraho before yo gu spending money ubonye
+
+komera ushikame kandi ukomere amagambo mabi ubwirwa ntakaguce intege ntuzatume nicuza impamvu nagukunze ibindi ubindekere
+
+baby ndagukunda 🥰 🥰😜
+</p>
+
+<h2 style="color:pink;">
+My Beautiful Queen 😍
+</h2>
+
+<img src="img/Channy.JPG" class="photo">
+
+<h2 style="color:red;">
+❤️ I LOVE YOU CHANNY ❤️
+</h2>
+
+</div>
+
+<script>
+
+function createHearts() {
+
+    for(let i = 0; i < 100; i++) {
+
+        let heart = document.createElement("div");
+
+        heart.className = "heart";
+
+        heart.innerHTML =
+        ["❤️","💕","💖","💗","💘","🥰"]
+        [Math.floor(Math.random() * 6)];
+
+        heart.style.left = Math.random() * 100 + "vw";
+
+        heart.style.fontSize =
+        (20 + Math.random() * 30) + "px";
+
+        heart.style.animationDuration =
+        (3 + Math.random() * 5) + "s";
+
+        document.body.appendChild(heart);
+
+        setTimeout(() => {
+            heart.remove();
+        }, 8000);
+    }
+}
+
+createHearts();
+
+setInterval(createHearts, 4000);
+
+</script>
+
+</body>
+</html>
